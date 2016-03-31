@@ -1,0 +1,7 @@
+<div class="col-md-3">
+  <ul class="sidebar">
+    <%= tag_cloud Post.tag_counts, %w[s m l] do |tag, css_class| %>
+    	<%= link_to tag.name, tag_path(tag.name), class: css_class %>
+    <% end %>
+  </ul>
+</div>

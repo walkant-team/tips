@@ -1,0 +1,18 @@
+# default: &default
+#   adapter: postgresql
+#   host: localhost
+#   encoding: utf8
+#   username: 
+#   password: 
+
+# test:
+#   <<: *default
+#   database: warriors_test
+
+# development:
+#   <<: *default
+#   database: warriors_dev
+
+# production:
+#   <<: *default
+#   database: warriors_prod

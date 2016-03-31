@@ -1,0 +1,58 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require bootsy
+ *= require_tree .
+ *= require_self
+ */
+
+@import "bootsy";
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+.size-comments{
+	margin-top: 50px;
+	margin-bottom: 50px;	
+}
+
+.size-content{
+	margin-top: 70px;
+	margin-bottom: 20px;
+}
+
+.size-content-2{
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+.size-content-3{
+	margin-top: 20px;
+	margin-bottom: 70px;
+}
+
+.block4{
+	border: 1px solid #e2e2e4;
+}
+
+.borderBlock{
+	background: white;		
+}
+
+.sidebar{
+	background: white;
+}
+
+.sidebar a{
+	color: #f05657;
+	margin: 15px;
+	list-style: none; 
+}

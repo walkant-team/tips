@@ -1,0 +1,47 @@
+<h2 class="text-center">Encuentra tutoriales en español de desarrollo web y móvil</h2>
+<p class="text-center">Aprende paso a paso nuevas tecnologías</p>
+
+<div class="col-xs-12 col-md-12 col-lg-12 size-content">
+	<h3>Tutoriales basicos:</h3><br>
+  	<% @posts.each do |post| %>
+	  	<div class="col-xs-18 col-sm-8 col-md-4">
+	      <div class="thumbnail">
+	          <%= image_tag post.image.url, class: 'card-img-top' %>
+	          <div class="caption">
+	          	<h4><%= link_to post.title, post_path(post) %></h4>
+	            <p><%= post.description %></p>
+	          </div>
+	      </div>
+	    </div>
+	<% end %>
+</div>
+
+<div class="col-xs-12 col-md-12 col-lg-12 size-content-2">
+	<h3>Videos:</h3><br>
+  	<% @video_post.each do |post| %>
+	  	<div class="col-xs-18 col-sm-8 col-md-4">
+	      <div class="thumbnail">
+	          <%= image_tag post.image.url, class: 'card-img-top' %>
+	          <div class="caption">
+	            <h4><%= link_to post.title, post_path(post) %></h4>
+	            <p><%= post.description %></p>
+	          </div>
+	      </div>
+	    </div>
+	<% end %>
+</div>
+
+<div class="col-xs-12 col-md-12 col-lg-12 size-content-3">
+	<h3>Hangouts:</h3><br>
+  	<% @hangout_post.each do |post| %>
+	  	<div class="col-xs-18 col-sm-8 col-md-4">
+	      <div class="thumbnail">
+	          <%= image_tag post.image.url, class: 'card-img-top' %>
+	          <div class="caption">
+	            <h4><%= link_to post.title, post_path(post) %></h4>
+	            <p><%= post.description %></p>
+	          </div>
+	      </div>
+	    </div>
+	<% end %>
+</div>
